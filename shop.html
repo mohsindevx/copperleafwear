@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Copperleaf Wear LLC</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <a href="index.html" class="logo-link">
+                        <span class="logo-text">COPPERLEAF</span>
+                        <span class="logo-subtext">WEAR LLC</span>
+                    </a>
+                </div>
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="shop.html" class="nav-link active">Shop</a></li>
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                    <li><a href="index.html#collections" class="nav-link">Collections</a></li>
+                    <li><a href="index.html#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <button class="icon-btn search-btn" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="icon-btn cart-btn" aria-label="Shopping Cart" id="cartBtn">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1>Shop Our Collection</h1>
+            <p>Discover premium fashion pieces curated just for you</p>
+        </div>
+    </div>
+
+    <!-- Shop Section -->
+    <section class="shop-section">
+        <div class="container">
+            <div class="shop-layout">
+                <!-- Sidebar Filters -->
+                <aside class="shop-sidebar">
+                    <div class="filter-toggle">
+                        <button id="filterToggle" class="btn-filter-toggle">
+                            <i class="fas fa-filter"></i> Filters
+                        </button>
+                    </div>
+                    <div class="filters" id="filters">
+                        <!-- Category Filter -->
+                        <div class="filter-group">
+                            <h3 class="filter-title">Category</h3>
+                            <div class="filter-options">
+                                <label class="filter-option">
+                                    <input type="checkbox" name="category" value="all" checked>
+                                    <span>All Products</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="category" value="dresses">
+                                    <span>Dresses</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="category" value="tops">
+                                    <span>Tops & Blouses</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="category" value="outerwear">
+                                    <span>Outerwear</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="category" value="pants">
+                                    <span>Pants & Skirts</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="category" value="accessories">
+                                    <span>Accessories</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Price Filter -->
+                        <div class="filter-group">
+                            <h3 class="filter-title">Price Range</h3>
+                            <div class="filter-options">
+                                <label class="filter-option">
+                                    <input type="checkbox" name="price" value="0-50">
+                                    <span>Under $50</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="price" value="50-100">
+                                    <span>$50 - $100</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="price" value="100-150">
+                                    <span>$100 - $150</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="price" value="150-200">
+                                    <span>$150 - $200</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="price" value="200+">
+                                    <span>$200+</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Size Filter -->
+                        <div class="filter-group">
+                            <h3 class="filter-title">Size</h3>
+                            <div class="filter-options size-options">
+                                <label class="filter-option">
+                                    <input type="checkbox" name="size" value="XS">
+                                    <span>XS</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="size" value="S">
+                                    <span>S</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="size" value="M">
+                                    <span>M</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="size" value="L">
+                                    <span>L</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="size" value="XL">
+                                    <span>XL</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Color Filter -->
+                        <div class="filter-group">
+                            <h3 class="filter-title">Color</h3>
+                            <div class="filter-options color-options">
+                                <label class="filter-option color-option" title="Black">
+                                    <input type="checkbox" name="color" value="black">
+                                    <span class="color-swatch" style="background-color: #000000;"></span>
+                                </label>
+                                <label class="filter-option color-option" title="White">
+                                    <input type="checkbox" name="color" value="white">
+                                    <span class="color-swatch" style="background-color: #FFFFFF; border: 1px solid #ddd;"></span>
+                                </label>
+                                <label class="filter-option color-option" title="Blue">
+                                    <input type="checkbox" name="color" value="blue">
+                                    <span class="color-swatch" style="background-color: #4A90E2;"></span>
+                                </label>
+                                <label class="filter-option color-option" title="Red">
+                                    <input type="checkbox" name="color" value="red">
+                                    <span class="color-swatch" style="background-color: #E24A4A;"></span>
+                                </label>
+                                <label class="filter-option color-option" title="Green">
+                                    <input type="checkbox" name="color" value="green">
+                                    <span class="color-swatch" style="background-color: #4AE27D;"></span>
+                                </label>
+                                <label class="filter-option color-option" title="Beige">
+                                    <input type="checkbox" name="color" value="beige">
+                                    <span class="color-swatch" style="background-color: #D4C5B9;"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-secondary btn-block" id="resetFilters">Reset Filters</button>
+                    </div>
+                </aside>
+
+                <!-- Products Area -->
+                <div class="shop-content">
+                    <div class="shop-toolbar">
+                        <div class="results-info">
+                            <span id="resultsCount">25 Products</span>
+                        </div>
+                        <div class="sort-options">
+                            <label for="sortSelect">Sort by:</label>
+                            <select id="sortSelect" class="sort-select">
+                                <option value="featured">Featured</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="name-az">Name: A to Z</option>
+                                <option value="name-za">Name: Z to A</option>
+                                <option value="newest">Newest First</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="products-grid" id="productsGrid">
+                        <!-- Products will be dynamically loaded -->
+                    </div>
+
+                    <div class="no-results" id="noResults" style="display: none;">
+                        <i class="fas fa-search"></i>
+                        <h3>No Products Found</h3>
+                        <p>Try adjusting your filters or search criteria</p>
+                        <button class="btn btn-primary" id="clearFiltersBtn">Clear All Filters</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <a href="index.html" class="logo-link">
+                            <span class="logo-text">COPPERLEAF</span>
+                            <span class="logo-subtext">WEAR LLC</span>
+                        </a>
+                    </div>
+                    <p class="footer-description">Elevating your style with premium fashion that speaks to your unique personality.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="shop.html?category=dresses">Dresses</a></li>
+                        <li><a href="shop.html?category=tops">Tops & Blouses</a></li>
+                        <li><a href="shop.html?category=outerwear">Outerwear</a></li>
+                        <li><a href="shop.html?category=accessories">Accessories</a></li>
+                        <li><a href="shop.html">All Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Customer Service</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#contact">Contact Us</a></li>
+                        <li><a href="#">Shipping Information</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:manager@copperleafwear.com">manager@copperleafwear.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:857-322-4791">857-322-4791</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Fri: 9AM - 6PM EST</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Copperleaf Wear LLC. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content cart-modal">
+            <div class="modal-header">
+                <h3>Shopping Cart</h3>
+                <button class="modal-close" id="closeCart">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart">Your cart is empty</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span class="total-amount" id="cartTotal">$0.00</span>
+                </div>
+                <button class="btn btn-primary btn-block">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content product-modal">
+            <button class="modal-close" id="closeProductModal">&times;</button>
+            <div class="product-modal-grid" id="productModalContent">
+                <!-- Product details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div class="modal" id="searchModal">
+        <div class="modal-content search-modal">
+            <button class="modal-close" id="closeSearch">&times;</button>
+            <input type="text" class="search-input" placeholder="Search products..." id="searchInput">
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

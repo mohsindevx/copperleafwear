@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copperleaf Wear LLC - Premium Fashion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <a href="index.html" class="logo-link">
+                        <span class="logo-text">COPPERLEAF</span>
+                        <span class="logo-subtext">WEAR LLC</span>
+                    </a>
+                </div>
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#collections" class="nav-link">Collections</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <button class="icon-btn search-btn" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="icon-btn cart-btn" aria-label="Shopping Cart" id="cartBtn">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1600&q=80" alt="Fashion Collection">
+                <div class="hero-content">
+                    <div class="container">
+                        <span class="hero-subtitle">New Collection 2025</span>
+                        <h1 class="hero-title">Elegance Redefined</h1>
+                        <p class="hero-description">Discover timeless pieces that elevate your wardrobe</p>
+                        <a href="shop.html" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1600&q=80" alt="Premium Fashion">
+                <div class="hero-content">
+                    <div class="container">
+                        <span class="hero-subtitle">Premium Quality</span>
+                        <h1 class="hero-title">Crafted for You</h1>
+                        <p class="hero-description">Experience luxury in every stitch</p>
+                        <a href="shop.html" class="btn btn-primary">Explore Collection</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=1600&q=80" alt="Fashion Style">
+                <div class="hero-content">
+                    <div class="container">
+                        <span class="hero-subtitle">Exclusive Designs</span>
+                        <h1 class="hero-title">Style That Speaks</h1>
+                        <p class="hero-description">Make every moment unforgettable</p>
+                        <a href="shop.html" class="btn btn-primary">View Collection</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="hero-nav hero-prev" aria-label="Previous slide">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="hero-nav hero-next" aria-label="Next slide">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="hero-dots"></div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Shop By Category</h2>
+                <p class="section-subtitle">Explore our curated collections</p>
+            </div>
+            <div class="category-grid">
+                <a href="shop.html?category=dresses" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=600&q=80" alt="Dresses">
+                    <div class="category-overlay">
+                        <h3>Dresses</h3>
+                    </div>
+                </a>
+                <a href="shop.html?category=tops" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1564557287817-3785e38ec1f5?w=600&q=80" alt="Tops">
+                    <div class="category-overlay">
+                        <h3>Tops & Blouses</h3>
+                    </div>
+                </a>
+                <a href="shop.html?category=outerwear" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600&q=80" alt="Outerwear">
+                    <div class="category-overlay">
+                        <h3>Outerwear</h3>
+                    </div>
+                </a>
+                <a href="shop.html?category=accessories" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?w=600&q=80" alt="Accessories">
+                    <div class="category-overlay">
+                        <h3>Accessories</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Products</h2>
+                <p class="section-subtitle">Handpicked favorites just for you</p>
+            </div>
+            <div class="products-grid" id="featuredProducts">
+                <!-- Products will be dynamically loaded -->
+            </div>
+            <div class="text-center">
+                <a href="shop.html" class="btn btn-secondary">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Highlights -->
+    <section class="collections" id="collections">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Signature Collections</h2>
+                <p class="section-subtitle">Curated styles for every occasion</p>
+            </div>
+            <div class="collections-grid">
+                <div class="collection-item large">
+                    <img src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?w=800&q=80" alt="Spring Collection">
+                    <div class="collection-content">
+                        <h3>Spring Essentials</h3>
+                        <p>Refresh your wardrobe with vibrant spring styles</p>
+                        <a href="shop.html?collection=spring" class="btn btn-light">Shop Collection</a>
+                    </div>
+                </div>
+                <div class="collection-item">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&q=80" alt="Evening Wear">
+                    <div class="collection-content">
+                        <h3>Evening Elegance</h3>
+                        <p>Make a statement</p>
+                        <a href="shop.html?collection=evening" class="btn btn-light">Explore</a>
+                    </div>
+                </div>
+                <div class="collection-item">
+                    <img src="https://images.unsplash.com/photo-1544441893-675973e31985?w=600&q=80" alt="Casual Chic">
+                    <div class="collection-content">
+                        <h3>Casual Chic</h3>
+                        <p>Effortless style</p>
+                        <a href="shop.html?collection=casual" class="btn btn-light">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80" alt="About Copperleaf Wear">
+                </div>
+                <div class="about-content">
+                    <span class="about-label">Our Story</span>
+                    <h2 class="about-title">Crafting Timeless Fashion Since Day One</h2>
+                    <p class="about-text">At Copperleaf Wear LLC, we believe that fashion is more than clothing—it's an expression of who you are. Our carefully curated collections blend contemporary designs with timeless elegance, ensuring you look and feel your best.</p>
+                    <p class="about-text">Each piece is selected with meticulous attention to quality, comfort, and style. We're committed to providing an exceptional shopping experience and fashion that empowers you to embrace your unique style.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Premium Quality Materials</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Sustainable Fashion Choices</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Exceptional Customer Service</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-subtitle">Real stories from real people</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The quality of the pieces I received from Copperleaf Wear exceeded my expectations. The fit is perfect, and the fabric feels luxurious. I'll definitely be shopping here again!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/150?img=1" alt="Sarah Johnson">
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <span>New York, NY</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"I'm impressed by the attention to detail and the modern designs. Copperleaf Wear has become my go-to for stylish, high-quality fashion. The customer service is outstanding!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/150?img=5" alt="Emily Chen">
+                        <div>
+                            <h4>Emily Chen</h4>
+                            <span>Los Angeles, CA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Every piece I've purchased has been absolutely beautiful. The website is easy to navigate, shipping was fast, and the packaging was elegant. Highly recommend!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/150?img=9" alt="Amanda Rodriguez">
+                        <div>
+                            <h4>Amanda Rodriguez</h4>
+                            <span>Miami, FL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay In Style</h2>
+                <p>Subscribe to receive exclusive offers, style tips, and updates on new arrivals</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">We'd love to hear from you</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Us</h4>
+                            <a href="mailto:manager@copperleafwear.com">manager@copperleafwear.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <a href="tel:857-322-4791">857-322-4791</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>Monday - Friday: 9AM - 6PM EST</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <a href="index.html" class="logo-link">
+                            <span class="logo-text">COPPERLEAF</span>
+                            <span class="logo-subtext">WEAR LLC</span>
+                        </a>
+                    </div>
+                    <p class="footer-description">Elevating your style with premium fashion that speaks to your unique personality.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="shop.html?category=dresses">Dresses</a></li>
+                        <li><a href="shop.html?category=tops">Tops & Blouses</a></li>
+                        <li><a href="shop.html?category=outerwear">Outerwear</a></li>
+                        <li><a href="shop.html?category=accessories">Accessories</a></li>
+                        <li><a href="shop.html">All Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Customer Service</h4>
+                    <ul class="footer-links">
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#">Shipping Information</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:manager@copperleafwear.com">manager@copperleafwear.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:857-322-4791">857-322-4791</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Fri: 9AM - 6PM EST</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Copperleaf Wear LLC. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content cart-modal">
+            <div class="modal-header">
+                <h3>Shopping Cart</h3>
+                <button class="modal-close" id="closeCart">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart">Your cart is empty</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span class="total-amount" id="cartTotal">$0.00</span>
+                </div>
+                <button class="btn btn-primary btn-block">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content product-modal">
+            <button class="modal-close" id="closeProductModal">&times;</button>
+            <div class="product-modal-grid" id="productModalContent">
+                <!-- Product details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div class="modal" id="searchModal">
+        <div class="modal-content search-modal">
+            <button class="modal-close" id="closeSearch">&times;</button>
+            <input type="text" class="search-input" placeholder="Search products..." id="searchInput">
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
